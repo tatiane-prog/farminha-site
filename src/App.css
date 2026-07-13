@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f8ee;
+  color: #2f3a2f;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f4f8ee;
+}
+
+/* HEADER */
+
+.header {
+  width: 100%;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+background-color: #cfe2bd;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.logo img {
+  width: 95px;
+  height: auto;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+  font-weight: 600;
+}
+
+.menu a {
+  color: #3f4a3f;
+}
+
+.menu a:hover {
+  color: #4f7d4f;
+}
+
+/* BANNER PRINCIPAL */
+
+.banner {
+  width: 100%;
+  padding: 0;
+  background-color: #f8f5ed;
+}
+
+.banner-principal {
+  width: 100%;
+  display: block;
+}
+
+/* BOTÕES */
+
+.botoes {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.btn-principal {
+  background-color: #4f7d4f;
+  color: #ffffff;
+}
+
+.btn-principal:hover {
+  background-color: #3f6a3f;
+}
+
+.btn-secundario {
+  border: 2px solid #4f7d4f;
+  color: #4f7d4f;
+}
+
+.btn-secundario:hover {
+  background-color: #4f7d4f;
+  color: #ffffff;
+}
+
+/* SEÇÕES GERAIS */
+
+.secao {
+  padding: 70px 8%;
+  text-align: center;
+  background-color: #f4f8ee;
+}
+
+.secao-clara {
+  background-color: #ffffff;
+}
+
+.secao-verde {
+  background-color: #e8f0df;
+}
+
+.secao h2,
+.contato h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #263326;
+}
+
+.secao > p {
+  max-width: 800px;
+  margin: 0 auto 35px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #4c5a4c;
+}
+
+/* TAG DAS SEÇÕES */
+
+.texto-secao {
+  max-width: 850px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.tag-secao {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 10px 24px;
+  border-radius: 30px;
+  background-color: #dcebcf;
+  color: #4f7d4f;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+/* GRID PADRÃO DOS CARDS */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARDS GERAIS */
+
+.card {
+  background-color: #ffffff;
+  padding: 28px;
+  border-radius: 20px;
+  text-align: left;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.card h3 {
+  color: #4f7d4f;
+  margin-bottom: 12px;
+}
+
+.card p {
+  line-height: 1.6;
+  color: #4c5a4c;
+}
+
+/* SEÇÃO BENEFÍCIOS */
+
+.beneficios {
+  background-color: #eef4e6;
+}
+
+/* SEÇÃO VARIEDADES */
+
+.variedade-card {
+  border-top: 6px solid #8ebf77;
+}
+
+/* SEÇÃO COMO ENTREGAMOS / CARDS DAS BANDEJAS */
+
+.como-entregamos {
+  background-color: #ffffff;
+}
+
+.grid-entrega {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card-entrega {
+  background-color: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(38, 51, 38, 0.09);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e1ead8;
+}
+
+.card-entrega:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(38, 51, 38, 0.14);
+}
+
+.card-entrega img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  display: block;
+  background-color: #f8f5ed;
+  padding: 8px;
+}
+
+.card-entrega h3 {
+  color: #4f7d4f;
+  font-size: 21px;
+  margin: 18px 18px 8px;
+}
+
+.card-entrega p {
+  color: #4c5a4c;
+  line-height: 1.5;
+  font-size: 15px;
+  margin: 0 18px 22px;
+}
+
+/* SEÇÃO DA FARMINHA PARA O PRATO */
+
+.secao-prato {
+  padding: 80px 8%;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 45px;
+  align-items: center;
+  background-color: #f4f8ee;
+}
+
+.secao-prato-texto {
+  text-align: left;
+}
+
+.secao-prato-texto h2 {
+  font-size: 38px;
+  color: #263326;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.secao-prato-texto p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #4c5a4c;
+  margin-bottom: 18px;
+}
+
+.secao-prato-texto .btn {
+  margin-top: 12px;
+}
+
+.secao-prato-imagem img {
+  width: 100%;
+  border-radius: 30px;
+  display: block;
+  box-shadow: 0 14px 35px rgba(38, 51, 38, 0.14);
+}
+
+/* CARDS DE USO */
+
+.usos {
+  background-color: #ffffff;
+}
+
+.grid-usos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.card-uso {
+  background-color: #f8f5ed;
+  border-radius: 24px;
+  overflow: hidden;
+  text-align: left;
+  box-shadow: 0 10px 28px rgba(38, 51, 38, 0.09);
+  border: 1px solid #e1ead8;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-uso:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(38, 51, 38, 0.14);
+}
+
+.card-uso img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  display: block;
+  background-color: #f8f5ed;
+  padding: 8px;
+}
+
+.card-uso h3 {
+  color: #4f7d4f;
+  font-size: 22px;
+  margin: 20px 20px 10px;
+}
+
+.card-uso p {
+  color: #4c5a4c;
+  line-height: 1.6;
+  margin: 0 20px 24px;
+}
+
+/* CONTATO */
+
+.contato {
+  padding: 70px 8%;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.contato p {
+  margin-bottom: 28px;
+  font-size: 18px;
+}
+
+/* RODAPÉ */
+
+.footer {
+  padding: 24px 8%;
+  text-align: center;
+  background-color: #263326;
+  color: #ffffff;
+}
+
+.instagram-footer {
+  margin-top: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.instagram-footer:hover {
+  color: #dcebcf;
+}
+
+.instagram-icon {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1024px) {
+  .grid-entrega {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-usos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .banner {
+    padding: 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    text-align: center;
+  }
+
+  .grid-entrega {
+    grid-template-columns: 1fr;
+  }
+
+  .card-entrega {
+    text-align: center;
+  }
+
+  .card-entrega img {
+    height: 240px;
+    object-fit: contain;
+  }
+
+  .secao-prato {
+    grid-template-columns: 1fr;
+    padding: 60px 6%;
+    text-align: center;
+  }
+
+  .secao-prato-texto {
+    text-align: center;
+  }
+
+  .secao-prato-texto h2 {
+    font-size: 30px;
+  }
+
+  .grid-usos {
+    grid-template-columns: 1fr;
+  }
+
+  .card-uso {
+    text-align: center;
+  }
+
+  .card-uso img {
+    height: 240px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 600px) {
+  .secao {
+    padding: 50px 6%;
+  }
+
+  @media (max-width: 600px) {
+  .secao h2,
+  .contato h2 {
+    font-size: 30px;
+  }
+}
+
+  .logo img {
+    width: 80px;
+  }
+
+  .menu {
+    font-size: 14px;
+  }
+
+  .card-entrega img {
+    height: 220px;
+  }
+
+  .card-uso img {
+    height: 220px;
+  }
+}
